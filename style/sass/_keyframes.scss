@@ -1,0 +1,98 @@
+@import "variables";
+
+@keyframes fade-in {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: $primary-two;
+  }
+
+  100% {
+    color: $primary-one;
+  }
+}
+
+@keyframes shake {
+  0% {
+    background-color: $primary-two;
+  }
+
+  100% {
+    background-color: $primary-one;
+  }
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(-100%);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-reverse {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-reverse {
+  0% {
+    -webkit-transform: translateX(100%);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}

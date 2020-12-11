@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="content">
+        <a href="index.html">
+          <img src="/images/logo.svg" alt="logo" class="logo"
+        /></a>
+        <button class="btn-light">Try It Free</button>
+      </div>
+    </nav>
+    <section class="section-top">
+      <div class="content">
+        <h1 class="title-main">Build The Community Your Fans Will Love</h1>
+        <p class="text-main">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button class="btn-primary">Get Started For Free</button>
+        <img src="/images/screen-mockups.svg" alt="main-img" class="img-main" />
+        <div class="counter-container">
+          <div class="counter counter-first">
+            <img
+              src="/images/icon-communities.svg"
+              alt="icon-communities"
+              class="icon-main"
+            />
+            <p class="nr">1.4k+</p>
+            <p class="label">Communities Formed</p>
+          </div>
+          <div class="counter">
+            <img
+              src="/images/icon-messages.svg"
+              alt="icon-messages"
+              class="icon-main"
+            />
+            <p class="nr">2.7m+</p>
+            <p class="label">Messages Sent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-card">
+      <div id="grow-top"></div>
+      <div class="card-primary-container">
+        <div class="content card card-primary">
+          <div class="container">
+            <h2 class="title-card">Grow Together</h2>
+            <p class="text">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <img
+            src="/images/illustration-grow-together.svg"
+            alt="illustration-grow-together"
+            class="img-card"
+          />
+        </div>
+      </div>
+      <div id="grow-bottom"></div>
+      <div id="flow">
+        <div class="content card card-secondary">
+          <div class="container">
+            <h2 class="title-card">Flowing Conversations</h2>
+            <p class="text">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <img
+            src="/images/illustration-flowing-conversation.svg"
+            alt="illustration-flowing-conversation"
+            class="img-card"
+          />
+        </div>
+      </div>
+      <div id="your">
+        <div id="your-top"></div>
+        <div class="card-primary-container">
+          <div class="content card card-primary">
+            <div class="container">
+              <h2 class="title-card">Your Users</h2>
+              <p class="text">
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+            <img
+              src="/images/illustration-your-users.svg"
+              alt="illustration-your-users"
+              class="img-card"
+            />
+          </div>
+        </div>
+        <div id="your-bottom"></div>
+      </div>
+    </section>
+    <section class="section-bottom">
+      <div class="content">
+        <h2 class="title-card">Ready To Build Your Community?</h2>
+        <button class="btn-primary">Get Started For Free</button>
+      </div>
+    </section>
+    <div id="footer-top"></div>
+    <footer>
+      <div class="content">
+        <div class="container">
+          <a href="index.html"
+            ><img
+              src="/images/logo-white.svg"
+              alt="logo"
+              class="logo-secondary"
+          /></a>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <div class="container-row">
+            <i class="fas fa-phone-alt"></i>
+            <p class="text">Phone: +1-543-123-4567</p>
+          </div>
+          <div class="container-row">
+            <i class="far fa-envelope"></i>
+            <p class="text">example@huddle.com</p>
+          </div>
+          <div class="container-row">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+          </div>
+        </div>
+        <div class="container">
+          <h3 class="title-footer">Newsletter</h3>
+          <p class="text">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+          <div class="form-container">
+            <input
+              type="email"
+              name="email"
+              aria-label="Email Field"
+              spellcheck="false"
+              id="email-field"
+            />
+            <button type="submit" class="btn-submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

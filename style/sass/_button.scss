@@ -1,0 +1,99 @@
+@import "variables";
+@import "keyframes";
+
+%shared-btn {
+  font-family: $body;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 10px 15px 15px -12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn {
+  &-light {
+    @extend %shared-btn;
+    border-radius: 20px;
+    border: 1px solid $primary-one;
+    background-color: transparent;
+    color: $primary-one;
+    padding: 5px 20px;
+    &:hover {
+      transform: scale(1.2);
+      animation-name: fade-in;
+      animation-duration: 500ms;
+    }
+    &:focus {
+      outline: none;
+      border: 2px dotted $primary-one;
+    }
+    @include respond-to("tablet") {
+      width: 150px;
+      padding: 8px 20px;
+      font-size: 16px;
+    }
+  }
+  &-primary {
+    @extend %shared-btn;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: $primary-one;
+    color: $neutral-two;
+    padding: 15px 0;
+    margin: 10px 0;
+    width: 220px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 35px;
+      background-color: $primary-two;
+      transform: scaleX(0);
+      transition: transform 400ms ease-in;
+      z-index: -1;
+    }
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+    &:focus {
+      outline: 2px dotted $primary-one;
+    }
+
+    @include respond-to("tablet") {
+      font-size: 18px;
+      border-radius: 35px;
+      width: 350px;
+      padding: 23px 15px;
+      &::before {
+        border-radius: 35px;
+      }
+    }
+  }
+  &-submit {
+    @extend %shared-btn;
+    border-radius: 5px;
+    border: none;
+    background-color: $primary-one;
+    color: $neutral-two;
+    font-size: 16px;
+    padding: 15px 20px;
+    margin-bottom: 100px;
+    width: 150px;
+    float: right;
+    &:hover {
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+    }
+    &:focus {
+      outline: 2px dotted $primary-one;
+    }
+  }
+}

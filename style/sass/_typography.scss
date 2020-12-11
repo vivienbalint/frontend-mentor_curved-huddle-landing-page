@@ -1,0 +1,49 @@
+@import "variables";
+
+body {
+  font-family: $body;
+}
+
+%shared-title {
+  font-family: $heading;
+  padding-bottom: 20px;
+  color: $neutral-one;
+}
+
+.title {
+  &-main,
+  &-card {
+    @extend %shared-title;
+    font-size: 24px;
+    padding-top: 80px;
+    @include respond-to("small") {
+      font-size: 38px;
+    }
+  }
+  &-footer {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 0 20px;
+  }
+}
+
+%shared-text {
+  color: $neutral-one;
+  line-height: 150%;
+  font-size: 15px;
+
+  @include respond-to("tablet") {
+    font-size: 18px;
+  }
+}
+
+.text {
+  @extend %shared-text;
+  &-main {
+    @extend %shared-text;
+    padding-bottom: 40px;
+    max-width: 500px;
+    margin: auto;
+  }
+}

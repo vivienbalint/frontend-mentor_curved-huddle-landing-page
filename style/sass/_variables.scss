@@ -1,0 +1,29 @@
+// Fonts
+$heading: "Poppins", sans-serif;
+$body: "Open Sans", sans-serif;
+$light: 400;
+$medium: 600;
+$bold: 700;
+// Colors
+$primary-one: hsl(322, 100%, 66%);
+$primary-two: hsl(321, 100%, 78%);
+$primary-three: hsl(0, 100%, 63%);
+$neutral-one: hsl(192, 100%, 9%);
+$neutral-two: hsl(207, 100%, 98%);
+$bg: #f6fbff;
+$bg-footer: #00252e;
+// Media Query
+$breakpoints: (
+  "small": 444px,
+  "tablet": 769px,
+  "desktop": 1025px,
+  "wide": 2000px,
+) !default;
+// Map to breakpoints
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

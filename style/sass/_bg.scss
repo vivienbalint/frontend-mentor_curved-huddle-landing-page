@@ -1,0 +1,61 @@
+@import "variables";
+
+%bg-shared {
+  width: 100%;
+  height: 130px;
+  background: {
+    repeat: no-repeat;
+    size: contain;
+  }
+  @include respond-to("small") {
+    height: 230px;
+  }
+  @include respond-to("wide") {
+    height: 300px;
+  }
+}
+
+#grow-top {
+  @extend %bg-shared;
+  background-image: url("/images/bg-section-top-mobile-1.svg");
+  background-position: bottom;
+  @include respond-to("tablet") {
+    background-image: url("/images/bg-section-top-desktop-1.svg");
+  }
+}
+
+#grow-bottom {
+  @extend %bg-shared;
+  background-image: url("/images/bg-section-bottom-mobile-1.svg");
+  background-position: top;
+  @include respond-to("tablet") {
+    background-image: url("/images/bg-section-bottom-desktop-1.svg");
+  }
+}
+
+#your-top {
+  @extend %bg-shared;
+  background-image: url("/images/bg-section-top-mobile-2.svg");
+  background-position: bottom;
+  @include respond-to("tablet") {
+    background-image: url("/images/bg-section-top-desktop-2.svg");
+  }
+}
+
+#your-bottom {
+  @extend %bg-shared;
+  background-image: url("/images/bg-section-bottom-mobile-2.svg");
+  background-position: top;
+  @include respond-to("tablet") {
+    background-image: url("/images/bg-section-bottom-desktop-2.svg");
+  }
+}
+
+#footer-top {
+  @extend %bg-shared;
+  background-image: url("/images/bg-footer-top-mobile.svg");
+  background-position: bottom;
+  @include respond-to("tablet") {
+    background-image: url("/images/bg-footer-top-desktop.svg");
+  }
+}
