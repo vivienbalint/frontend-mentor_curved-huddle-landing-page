@@ -18,9 +18,9 @@
     color: $primary-one;
     padding: 5px 20px;
     &:hover {
+      animation: fade-in 1000ms;
       transform: scale(1.2);
-      animation-name: fade-in;
-      animation-duration: 500ms;
+      transition: transform 500ms ease-in-out;
     }
     &:focus {
       outline: none;
